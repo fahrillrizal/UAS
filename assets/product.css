@@ -21,36 +21,6 @@ body {
 .navbar-nav .nav-item {
     margin-right: 15px;
 }
-
-/* carousel */
-#carouselExampleIndicators .carousel-item img {
-    max-height: 300px;
-    width: auto;
-    margin: auto;
-}
-.carousel-indicators [data-bs-target] {
-    box-sizing: content-box;
-    flex: 0 1 auto;
-    width: 12px; 
-    height: 12px;
-    margin-right: 5px;
-    margin-left: 5px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 0;
-    border-radius: 50%;
-    opacity: 0.5;
-    transition: opacity 0.6s ease;
-}
-
-.carousel-indicators [data-bs-target].active {
-    opacity: 1;
-    background-color: red;
-}
-
-
 .container {
 display: flex;
 flex-direction: column;
@@ -75,21 +45,6 @@ flex-direction: column;
 .text h4 {
     margin: 0;
     margin-left: -3%;
-}
-.fa-star {
-    color: gray;
-}
-
-.checked {
-    color: yellow;
-}
-
-.view{
-    background-color: #DB4444; 
-    border: none; 
-    color: #FAFAFA; 
-    height: 40px; 
-    width: 15%;
 }
 button.see {
     background-color: #DB4444;
