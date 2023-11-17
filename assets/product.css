@@ -1,7 +1,6 @@
 body {
     padding-top: 56px;
 }
-
 .navbar-scrolled {
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.8);
@@ -52,7 +51,7 @@ button.see {
     color: #FAFAFA;
     height: 37px;
     width: 110%;
-    margin-right: 0;
+    /* margin-right: 1px; */
 }
 footer {
     background-color: black;
