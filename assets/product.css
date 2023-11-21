@@ -11,6 +11,10 @@ body {
 .navbar-scrolled .nav-link {
     color: white !important;
 }
+.navbar-scrolled .nav-link.active,
+.navbar-scrolled .nav-item :hover{
+    border-bottom: 2px solid white;
+}
 
 .navbar-nav {
     margin: 0 auto;
@@ -20,6 +24,10 @@ body {
 
 .navbar-nav .nav-item {
     margin-right: 15px;
+}
+.nav-link.active,
+.nav-item :hover{
+    border-bottom: 2px solid black;
 }
 /* carousel */
 #carouselExampleIndicators .carousel-item img {

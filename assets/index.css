@@ -2,12 +2,6 @@ body {
     padding-top: 56px;
     overflow-x: hidden;
 }
-.word {
-    margin: auto;
-    color: #4EB542;
-    font: 700 normal 2.5em 'tahoma';
-    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
-  }
 .navbar-scrolled {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -17,6 +11,10 @@ body {
 .navbar-scrolled .navbar-brand,
 .navbar-scrolled .nav-link {
     color: white !important;
+}
+.navbar-scrolled .nav-link.active,
+.navbar-scrolled .nav-item :hover{
+    border-bottom: 2px solid white;
 }
 
 .navbar-nav {
@@ -28,7 +26,10 @@ body {
 .navbar-nav .nav-item {
     margin-right: 15px;
 }
-
+.nav-link.active,
+.nav-item :hover{
+    border-bottom: 2px solid black;
+}
 /* carousel */
 #carouselExampleIndicators .carousel-item img {
     max-height: 300px;
