@@ -1,3 +1,6 @@
+*{
+    font-family:'Poppins', sans-serif;
+}
 body {
     padding-top: 56px;
     overflow-x: hidden;
@@ -8,7 +11,6 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.navbar-scrolled .navbar-brand,
 .navbar-scrolled .nav-link {
     color: white !important;
 }
@@ -134,6 +136,7 @@ button.see {
 
 .card.text-center{
     box-shadow: 8px 8px gray;
+    height: 370px;
 }
 
 #btn-top {
