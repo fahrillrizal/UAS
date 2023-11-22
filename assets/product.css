@@ -17,7 +17,7 @@ body {
 }
 
 .navbar-nav {
-    margin: 0 auto;
+    margin-left: -130%;
     display: flex;
     justify-content: center;
 }

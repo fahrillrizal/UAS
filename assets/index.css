@@ -18,7 +18,7 @@ body {
 }
 
 .navbar-nav {
-    margin: 0 auto;
+    margin-left: -130%;
     display: flex;
     justify-content: center;
 }
@@ -127,9 +127,13 @@ button.see {
     width: 110%;
     margin-right: 0;
 }
-footer {
+.content, footer {
     background-color: black;
-    color: #FAFAFA
+    color: white;
+}
+
+.card.text-center{
+    box-shadow: 8px 8px gray;
 }
 
 #btn-top {
@@ -149,6 +153,16 @@ height: 40px;
 display: flex;
 align-items: center;
 justify-content: center;
+}
+@media (max-width: 576px) {
+    .view{
+        width: 20%;
+        height: auto;
+    }
+    .text-content{
+        padding: 0.5%;
+        margin-top: 15%;
+    }
 }
 #btn-top i {
 font-size: 18px; 
