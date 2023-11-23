@@ -125,18 +125,20 @@ button.see {
     background-color: #DB4444;
     border: none;
     color: #FAFAFA;
-    height: 37px;
+    height: 37px;   
     width: 110%;
     margin-right: 0;
 }
-.content, footer {
+footer {
     background-color: black;
     color: white;
 }
-
+.content{
+    background-color: #E8EDFF;
+}
 .card.text-center{
-    box-shadow: 8px 8px gray;
-    height: 370px;
+    box-shadow: 5px 5px gray;
+    height: 410px;
 }
 
 #btn-top {

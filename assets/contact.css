@@ -67,14 +67,10 @@ background-color: #555;
   }
   .contact-hero {
     position: relative;
-    background-image: url(assets/image/Background.png);
     background-size: cover;
     background-position: center;
     height: 415px;
-    padding: 0px 40px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
   }
   .contact-info {
     position: absolute;

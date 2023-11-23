@@ -3,6 +3,7 @@
 }
 body {
     padding-top: 56px;
+    overflow-x: hidden;
 }
 .navbar-scrolled {
     -webkit-backdrop-filter: blur(10px);
