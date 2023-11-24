@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/about.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>About</title>
 </head>
 <body>
@@ -39,33 +40,62 @@
         </div>
     </nav>
 
-    <div class="yaptech-container">
-        <div class="yaptech-overlay"></div>
-        <div class="yaptech-header">
-            <div class="yaptech-header-content">
-                <h1>Welcome to Infinite Tech</h1>
-                <p>We are a passionate team of tech enthusiasts dedicated to empowering individuals and businesses with the tools they need to thrive in today's digital landscape. Our comprehensive range of IT products and services caters to every need, from gaming and content creation to business productivity and AIoT solutions.</p>
-                <h1>Our Commitment to Innovation</h1>
-                <p>At YapTech, we believe in the transformative power of technology. We are constantly pushing the boundaries of innovation, developing products that are not only powerful but also user-friendly and aesthetically pleasing. Our commitment to quality and customer satisfaction is unwavering, and we strive to provide an exceptional shopping experience that exceeds expectations.</p>
-                <h1>Our Extensive Product Range</h1>
-                <p>Whether you're a seasoned gamer, a creative professional, or a business owner seeking to enhance productivity, our extensive product range has something for everyone. We offer a vast selection of laptops, graphics cards, monitors, motherboards, desktops, peripherals, servers, IPCs, robotic appliances, and vehicle infotainment and telematics systems.</p>
-                <h1>Our Unwavering Support</h1>
-                <p>Our expertise extends beyond product offerings. We are committed to providing our customers with comprehensive support, ensuring they get the most out of their IT investments. Our team of knowledgeable professionals is always available to answer questions, provide troubleshooting assistance, and offer personalized recommendations.</p>
-                <h1>Join Us on Our Digital Journey</h1>
-                <p>Embrace the power of technology with YapTech. We invite you to explore our comprehensive product range, discover innovative solutions, and experience the exceptional service that sets us apart. Together, let's shape the future of technology.</p>
+    <div class="main-container mt-2" style="background-image: url(assets/image/bg.png); background-repeat: no-repeat; background-size: cover; padding-top: 2%;">
+        <div class="title text-center">
+            <h1>About Us</h1>
+        </div>
+        <div class="row mx-4 mt-4">
+            <div class="col-md-7">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="card" style="background-color: #FFA92E;">
+                        <div class="content p-4">
+                            <h3>Mission Statement</h3>
+                            <p>Our goal is to be a force of change in the world of technology, dedicated to creating innovative solutions that not only solve today's challenges,but also lay the foundation for a more sustainable and connected future.<br>Through our leadership in research and development, we are committed to providing cutting-edge products and services that combine artificial intelligence, cloud technology and connectivity.
+                                Our vision is to enable the global community to live better, smarter and more connected lives.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-5">
+                <div data-aos="fade-left" data-aos-duration="1000">
+                    <div class="card" style="height: 100%;">
+                        <div class="content p-4">
+                            <h3>Vision Statement</h3>
+                            <p>Taking a leading role in the world of technology, we aspire to an innovative future that not only addresses today's challenges, but also builds a foundation of greater sustainability and connectivity. We envision a global society that lives better, smarter, and more connected.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="yaptech-banner">
-            <img src="assets/image/Background.png" alt="">
-            <div class="yaptech-banner-text">
-                <h1>ABOUT US</h1>
-            </div>
-        </div>
+
+        <div class="row pt-4 mx-4"> 
+            <div class="col-6"> 
+                <div data-aos="fade-right" data-aos-duration="1000"><img src="assets/image/about.jpeg" alt="" style="width: 100%;"></div> 
+            </div> 
+            <div class="col-6" style="margin-top: 10%;">
+                <div data-aos="fade-left" data-aos-duration="1000">
+                    <div class="s card" style="background-color: #D9D9D9;"> 
+                        <div class="content p-4"> 
+                            <h3>Core Values</h3> 
+                            <p>Sustainable Innovation: Driving innovation to shape a sustainable future. Diversity and Collaboration: Value diversity and prioritize collaboration. Integrity and Ethics: Act with integrity and uphold business ethics. Customer Satisfaction: Placing customer satisfaction as a top priority.</p> 
+                        </div> 
+                    </div> 
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000">
+                    <div class="card mt-4" style="background-color: #FFA92E;"> 
+                        <div class="content p-4"> 
+                            <h3>Company Motivation</h3> 
+                            <p>Our company is passionate about creating positive impact through technology. With a focus on innovation, inclusivity and social responsibility, we are committed to empowering individuals, embracing meaningful connectivity and pushing the boundaries of innovation. Join us in shaping a brighter and more empowered future.</p> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
     </div>
     
     <!-- Footer -->
     <footer class="text-center text-lg-start">
-        <section class="d-flex justify-content-center justify-content-lg-between p-4">
+        <section class="d-flex justify-content p-4-center justify-content-lg4between p-4">
         <div class="container text-center text-md-start">
             <div class="row mt-3">
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 d-flex flex-column">
@@ -117,6 +147,10 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

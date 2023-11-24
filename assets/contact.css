@@ -20,7 +20,7 @@ body {
     border-bottom: 2px solid white;
 }
 .navbar-nav {
-    margin-left: -130%;
+    margin-left: -148%;
     display: flex;
     justify-content: center;
 }
@@ -67,7 +67,6 @@ background-color: #555;
   }
   .contact-hero {
     position: relative;
-    background-size: cover;
     background-position: center;
     height: 415px;
     display: flex;
@@ -175,3 +174,28 @@ background-color: #555;
     padding: 15px;
     z-index: 1000;
     }
+    @media (max-width: 576px) {
+      .view {
+          width: 20%;
+          height: auto;
+      }
+  
+      .text-content {
+          padding: 0.5%;
+          margin-top: 15%;
+      }
+  
+      .navbar-nav {
+          margin-left: 0;
+          justify-content: space-around;
+      }
+  
+      .navbar-nav .nav-item {
+          margin-right: 0;
+      }
+  }
+  @media (max-width: 1254px) {
+      .navbar-nav{
+          margin-left: -123%;
+      }
+  }

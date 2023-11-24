@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-nav {
-    margin-left: -130%;
+    margin-left: -148%;
     display: flex;
     justify-content: center;
 }
@@ -138,7 +138,7 @@ footer {
 }
 .card.text-center{
     box-shadow: 5px 5px gray;
-    height: 410px;
+    height: 450px;
 }
 
 #btn-top {
@@ -175,4 +175,29 @@ color: white;
 }
 #btn-top:hover {
 background-color: #555;
+}
+@media (max-width: 576px) {
+    .view {
+        width: 20%;
+        height: auto;
+    }
+
+    .text-content {
+        padding: 0.5%;
+        margin-top: 15%;
+    }
+
+    .navbar-nav {
+        margin-left: 0;
+        justify-content: space-around;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 0;
+    }
+}
+@media (max-width: 1254px) {
+    .navbar-nav{
+        margin-left: -123%;
+    }
 }
