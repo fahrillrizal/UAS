@@ -35,7 +35,11 @@ footer {
     background-color: black;
     color: #FAFAFA
 }
-#btn-top {
+.icon-up {
+  margin-left: -.5rem;
+  margin-right: -.5rem;
+}
+.back-to-top {
 display: none;
 position: fixed;
 bottom: 20px;
@@ -53,12 +57,8 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-#btn-top i {
-font-size: 18px; 
-color: white;
-}
-#btn-top:hover {
-background-color: #555;
+.back-to-top:hover {
+  background-color: #555;
 }
 .contact-container {
     display: flex;

@@ -4,39 +4,34 @@ document.addEventListener("scroll", function () {
     navbar.classList.toggle("navbar-scrolled", window.scrollY > 0);
 });
 
-//btn-to-top
-let mybutton = document.getElementById("btn-top");
-window.onload = function() {
-    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
-};
-
-window.onscroll = function() {
+//btn back to top
+let mybutton = document.getElementById("btn-back-to-top");
+if (mybutton) {
+    mybutton.style.display = "none";
+}
+window.onscroll = function () {
     scrollFunction();
 };
-
 function scrollFunction() {
-    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+    ) {
         mybutton.style.display = "block";
     } else {
         mybutton.style.display = "none";
     }
 }
-
-function topFunction() {
-    document.body.style.scrollBehavior = "smooth";
-    document.documentElement.style.scrollBehavior = "smooth";
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-
-    setTimeout(function() {
-        document.body.style.scrollBehavior = "auto";
-        document.documentElement.style.scrollBehavior = "auto";
-    }, 1000);
+if (mybutton) {
+    mybutton.addEventListener("click", backToTop);
 }
+function backToTop() {
+    document.documentElement.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
 //btn to content
 document.getElementById("just").addEventListener("click", function() {
 const targetElement = document.getElementById("fyp");

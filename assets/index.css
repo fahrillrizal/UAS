@@ -136,12 +136,17 @@ footer {
 .content{
     background-color: #E8EDFF;
 }
-.card.text-center{
+.card .text-center{
     box-shadow: 5px 5px gray;
     height: 450px;
 }
 
-#btn-top {
+.icon-up {
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    /* margin-top: -1rem; */
+}
+.back-to-top {
 display: none;
 position: fixed;
 bottom: 20px;
@@ -159,6 +164,9 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+.back-to-top:hover {
+    background-color: #555;
+}
 @media (max-width: 576px) {
     .view{
         width: 20%;
@@ -168,13 +176,6 @@ justify-content: center;
         padding: 0.5%;
         margin-top: 15%;
     }
-}
-#btn-top i {
-font-size: 18px; 
-color: white;
-}
-#btn-top:hover {
-background-color: #555;
 }
 @media (max-width: 576px) {
     .view {
