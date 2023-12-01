@@ -34,34 +34,34 @@ function backToTop() {
 
 //btn to content
 document.getElementById("just").addEventListener("click", function() {
-const targetElement = document.getElementById("fyp");
+    const targetElement = document.getElementById("fyp");
 
-if (targetElement) {
-    scrollToSmoothly(targetElement.offsetTop, 1000);
-}
-});
-
-function scrollToSmoothly(targetPosition, duration) {
-const startPosition = window.scrollY || window.pageYOffset;
-const distance = targetPosition - startPosition;
-const startTime = performance.now();
-
-function step(currentTime) {
-    const elapsedTime = currentTime - startTime;
-    const scrollPosition = easeInOutCubic(elapsedTime, startPosition, distance, duration);
-    window.scrollTo(0, scrollPosition);
-
-    if (elapsedTime < duration) {
-        requestAnimationFrame(step);
+    if (targetElement) {
+      scrollToSmoothly(targetElement.offsetTop, 100);
     }
-}
+  });
 
-function easeInOutCubic(t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return (c / 2) * t * t * t + b;
-    t -= 2;
-    return (c / 2) * (t * t * t + 2) + b;
-}
+  function scrollToSmoothly(targetPosition, duration) {
+    const startPosition = window.scrollY || window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    const startTime = performance.now();
 
-requestAnimationFrame(step);
-}
+    function step(currentTime) {
+      const elapsedTime = currentTime - startTime;
+      const scrollPosition = easeInOutCubic(elapsedTime, startPosition, distance, duration);
+      window.scrollTo(0, scrollPosition);
+
+      if (elapsedTime < duration) {
+        requestAnimationFrame(step);
+      }
+    }
+
+    function easeInOutCubic(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t * t + b;
+      t -= 2;
+      return (c / 2) * (t * t * t + 2) + b;
+    }
+
+    requestAnimationFrame(step);
+  }
